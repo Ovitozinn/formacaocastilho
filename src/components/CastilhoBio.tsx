@@ -58,7 +58,7 @@ const CastilhoBio = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-primary/20 rounded-lg blur-xl"></div>
               <img 
-                src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952"
+                src="/lovable-uploads/8a778894-0186-48e6-a6d7-f78f25b74216.png"
                 alt="Castilho" 
                 className="relative w-full aspect-[3/4] object-cover rounded-lg glass"
               />
