@@ -66,6 +66,7 @@ const PricingCard = ({
         <CTAButton
           variant={isPopular ? "primary" : "secondary"}
           className="w-full"
+          onClick={() => window.location.href = "https://pay.kirvano.com/186d210d-4150-4fb3-9643-fc870759dda3"}
         >
           {isPopular ? "Garantir minha vaga" : "Começar agora"}
         </CTAButton>
