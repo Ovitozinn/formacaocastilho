@@ -30,55 +30,57 @@ const WhatYouWillLearn = () => {
   ];
 
   return (
-    <section className="py-24 px-4 bg-gradient-to-b from-dark to-dark-lighter relative overflow-hidden">
-      {/* Background effect */}
-      <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-primary-hover/5" />
+    <section className="py-32 relative overflow-hidden bg-dark">
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent,rgba(155,135,245,0.05))]" />
       
-      <div className="container mx-auto relative z-10">
-        <div className="text-center mb-16 max-w-4xl mx-auto">
-          <h2 className="text-5xl font-bold mb-6 gradient-text animate-fade-in">
-            Transforme seu Futuro Profissional
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight animate-fade-in">
+            O que você vai <span className="gradient-text">dominar</span>
           </h2>
-          <p className="text-2xl text-gray-300 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            Domine as habilidades mais valiosas do mercado e destaque-se na era da IA
+          <p className="text-xl text-gray-400 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            Desenvolva habilidades práticas e valiosas para se destacar no mercado de IA
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-20">
           {learningPoints.map((point, index) => (
             <div
               key={index}
-              className="glass p-8 rounded-2xl transform hover:scale-105 transition-all duration-300 animate-fade-in hover:bg-primary/5"
+              className="group animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="flex items-center gap-4 mb-6">
-                <div className="p-4 rounded-xl bg-primary/10">
-                  <point.icon className="w-10 h-10 text-primary" />
+              <div className="flex items-start gap-6 p-6 rounded-xl transition-all duration-300 hover:bg-white/[0.02]">
+                <div className="p-3 rounded-lg bg-primary/5 group-hover:bg-primary/10 transition-colors">
+                  <point.icon className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold text-white">{point.title}</h3>
+                <div>
+                  <h3 className="text-xl font-semibold mb-3 text-white/90">{point.title}</h3>
+                  <p className="text-gray-400 leading-relaxed">{point.description}</p>
+                </div>
               </div>
-              <p className="text-lg text-gray-300 leading-relaxed">{point.description}</p>
             </div>
           ))}
         </div>
 
-        <div className="max-w-3xl mx-auto text-center glass p-10 rounded-3xl animate-scale-in">
-          <p className="text-3xl font-bold text-primary mb-6">
-            Não espere mais para transformar sua carreira
-          </p>
-          <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-            Entre agora para nossa comunidade e tenha acesso a todo conhecimento necessário 
-            para se destacar no mercado de IA. Cada dia que passa é uma oportunidade perdida 
-            de começar sua transformação profissional.
-          </p>
-          <a
-            href="https://pay.kirvano.com/186d210d-4150-4fb3-9643-fc870759dda3"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-primary hover:bg-primary-hover text-white text-xl font-bold px-12 py-4 rounded-xl transform hover:scale-105 transition-all duration-300"
-          >
-            Começar Agora
-          </a>
+        <div className="max-w-3xl mx-auto">
+          <div className="p-8 md:p-12 rounded-2xl bg-white/[0.02] border border-white/[0.05] animate-scale-in">
+            <p className="text-2xl md:text-3xl font-bold text-white/90 mb-4 tracking-tight">
+              Comece sua jornada agora
+            </p>
+            <p className="text-lg text-gray-400 mb-8">
+              Entre para nossa comunidade e tenha acesso ao conhecimento necessário para se destacar 
+              no mercado de IA. Não perca mais tempo - cada dia é uma oportunidade.
+            </p>
+            <a
+              href="https://pay.kirvano.com/186d210d-4150-4fb3-9643-fc870759dda3"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center w-full md:w-auto bg-primary hover:bg-primary-hover text-white font-medium px-8 py-4 rounded-xl transition-all duration-300 hover:scale-[1.02]"
+            >
+              Começar Agora
+            </a>
+          </div>
         </div>
       </div>
     </section>
