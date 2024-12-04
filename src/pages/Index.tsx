@@ -27,10 +27,11 @@ const Index = () => {
     }
   ];
 
-  const pricingPlans = [
+  const individualCourses = [
     {
       title: "Desenvolvedor n8n",
-      price: "397",
+      price: "197",
+      originalPrice: "397",
       features: [
         "Automação de processos",
         "Integração de sistemas",
@@ -40,7 +41,8 @@ const Index = () => {
     },
     {
       title: "Engenharia de Prompt",
-      price: "197",
+      price: "97",
+      originalPrice: "197",
       features: [
         "Técnicas avançadas de prompt",
         "Otimização de resultados",
@@ -50,7 +52,8 @@ const Index = () => {
     },
     {
       title: "Prospecção e Fechamento",
-      price: "97",
+      price: "47",
+      originalPrice: "97",
       features: [
         "Estratégias de vendas",
         "Negociação efetiva",
@@ -60,28 +63,30 @@ const Index = () => {
     },
     {
       title: "Formação Agentes IA",
-      price: "897",
+      price: "497",
+      originalPrice: "897",
       features: [
         "Criação de agentes autônomos",
         "Integração com APIs",
         "Automação avançada",
         "Projetos completos"
       ]
-    },
-    {
-      title: "Curso Completo",
-      price: "199",
-      originalPrice: "997",
-      features: [
-        "Acesso a todos os cursos",
-        "Mentoria em grupo",
-        "Certificados individuais",
-        "Bônus exclusivos"
-      ],
-      isPopular: true,
-      description: "Em desenvolvimento - Aproveite o desconto especial!"
     }
   ];
+
+  const completePackage = {
+    title: "Formação Completa em IA",
+    price: "199",
+    originalPrice: "997",
+    features: [
+      "Acesso a TODOS os cursos acima",
+      "Mentoria em grupo semanal",
+      "Certificados individuais",
+      "Bônus exclusivos de lançamento"
+    ],
+    isPopular: true,
+    description: "🔥 OFERTA ESPECIAL DE LANÇAMENTO 2024 🔥\nAproveite! Preço aumentará em breve!"
+  };
 
   return (
     <div className="bg-dark text-white">
@@ -114,21 +119,36 @@ const Index = () => {
       <section className="py-20 px-4 bg-dark-lighter">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-center mb-4">
-            Planos disponíveis
+            Cursos Disponíveis
           </h2>
           <p className="text-gray-300 text-center mb-12 max-w-2xl mx-auto">
-            Escolha o plano ideal para sua jornada de aprendizado
+            Escolha o módulo ideal para sua jornada ou aproveite a oferta especial da formação completa
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 max-w-7xl mx-auto">
-            {pricingPlans.map((plan, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            {individualCourses.map((course, index) => (
               <PricingCard
                 key={index}
-                {...plan}
+                {...course}
                 className="animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               />
             ))}
+          </div>
+
+          <div className="max-w-2xl mx-auto">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-primary mb-2">
+                🚀 Oferta Especial de Lançamento 🚀
+              </h3>
+              <p className="text-gray-300">
+                Em comemoração ao lançamento da plataforma, estamos oferecendo um desconto especial para as primeiras turmas de 2024!
+              </p>
+            </div>
+            <PricingCard
+              {...completePackage}
+              className="animate-scale-in transform hover:scale-105 transition-transform duration-300"
+            />
           </div>
         </div>
       </section>

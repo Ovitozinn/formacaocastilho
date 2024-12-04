@@ -27,35 +27,37 @@ const PricingCard = ({
     <div
       className={cn(
         "p-6 rounded-xl backdrop-blur-sm border transition-all duration-300",
-        "transform hover:scale-105 animate-fade-in",
+        "transform hover:scale-105",
         isPopular 
-          ? "bg-primary/10 border-primary" 
+          ? "bg-primary/10 border-primary shadow-lg shadow-primary/20" 
           : "bg-white/5 border-white/10",
         className
       )}
       style={style}
     >
       {isPopular && (
-        <span className="px-3 py-1 text-sm font-medium text-primary bg-primary/20 rounded-full mb-4 inline-block">
-          Mais Popular
+        <span className="px-3 py-1 text-sm font-medium text-primary bg-primary/20 rounded-full mb-4 inline-block animate-pulse">
+          Oferta Limitada
         </span>
       )}
       <h3 className="text-2xl font-bold text-white mb-2">{title}</h3>
       <div className="mb-6">
-        <span className="text-4xl font-bold text-white">R$ {price}</span>
-        {originalPrice && (
-          <span className="text-lg text-gray-400 line-through ml-2">
-            R$ {originalPrice}
-          </span>
-        )}
+        <div className="flex items-center gap-2 mb-1">
+          <span className="text-4xl font-bold text-white">R$ {price}</span>
+          {originalPrice && (
+            <span className="text-lg text-gray-400 line-through">
+              R$ {originalPrice}
+            </span>
+          )}
+        </div>
         {description && (
-          <p className="text-sm text-primary mt-2">{description}</p>
+          <p className="text-sm text-primary mt-2 whitespace-pre-line">{description}</p>
         )}
       </div>
       <ul className="space-y-3 mb-6">
         {features.map((feature, index) => (
           <li key={index} className="flex items-center text-gray-300">
-            <Check className="w-5 h-5 text-primary mr-2" />
+            <Check className="w-5 h-5 text-primary mr-2 flex-shrink-0" />
             {feature}
           </li>
         ))}
@@ -64,7 +66,7 @@ const PricingCard = ({
         variant={isPopular ? "primary" : "secondary"}
         className="w-full"
       >
-        Começar agora
+        {isPopular ? "Garantir minha vaga" : "Começar agora"}
       </CTAButton>
     </div>
   );
