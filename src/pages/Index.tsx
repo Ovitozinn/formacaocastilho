@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import FeatureCard from "@/components/FeatureCard";
 import PricingCard from "@/components/PricingCard";
 import CastilhoBio from "@/components/CastilhoBio";
+import FinalCTA from "@/components/FinalCTA";
 
 const Index = () => {
   const features = [
@@ -223,6 +224,9 @@ const Index = () => {
 
       {/* Bio Section */}
       <CastilhoBio />
+
+      {/* Final CTA Section */}
+      <FinalCTA />
     </div>
   );
 };
