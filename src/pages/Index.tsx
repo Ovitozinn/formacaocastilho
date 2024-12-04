@@ -4,6 +4,7 @@ import FeatureCard from "@/components/FeatureCard";
 import PricingCard from "@/components/PricingCard";
 import CastilhoBio from "@/components/CastilhoBio";
 import FinalCTA from "@/components/FinalCTA";
+import WhatYouWillLearn from "@/components/WhatYouWillLearn";
 
 const Index = () => {
   const features = [
@@ -143,6 +144,8 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <WhatYouWillLearn />
 
       {/* Pricing Section */}
       <section className="py-20 px-4 bg-dark-lighter">
