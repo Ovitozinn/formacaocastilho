@@ -5,6 +5,7 @@ import PricingCard from "@/components/PricingCard";
 import CastilhoBio from "@/components/CastilhoBio";
 import FinalCTA from "@/components/FinalCTA";
 import WhatYouWillLearn from "@/components/WhatYouWillLearn";
+import TestimonialSection from "@/components/TestimonialSection";
 
 const Index = () => {
   const features = [
@@ -223,10 +224,13 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Testimonial Section - New addition */}
+      <TestimonialSection />
+
       {/* Bio Section */}
       <CastilhoBio />
 
-      {/* What You Will Learn Section - Now at the end */}
+      {/* What You Will Learn Section */}
       <WhatYouWillLearn />
 
       {/* Final CTA Section */}
