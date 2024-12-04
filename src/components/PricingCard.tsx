@@ -1,14 +1,17 @@
 import { Check } from "lucide-react";
 import CTAButton from "./CTAButton";
+import { cn } from "@/lib/utils";
 
 interface PricingCardProps {
   title: string;
   price: string;
   features: string[];
   isPopular?: boolean;
+  className?: string;
+  style?: React.CSSProperties;
 }
 
-const PricingCard = ({ title, price, features, isPopular }: PricingCardProps) => {
+const PricingCard = ({ title, price, features, isPopular, className, style }: PricingCardProps) => {
   return (
     <div
       className={cn(
@@ -16,8 +19,10 @@ const PricingCard = ({ title, price, features, isPopular }: PricingCardProps) =>
         "transform hover:scale-105 animate-fade-in",
         isPopular 
           ? "bg-primary/10 border-primary" 
-          : "bg-white/5 border-white/10"
+          : "bg-white/5 border-white/10",
+        className
       )}
+      style={style}
     >
       {isPopular && (
         <span className="px-3 py-1 text-sm font-medium text-primary bg-primary/20 rounded-full mb-4 inline-block">

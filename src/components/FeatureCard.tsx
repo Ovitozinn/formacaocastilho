@@ -6,9 +6,10 @@ interface FeatureCardProps {
   title: string;
   description: string;
   className?: string;
+  style?: React.CSSProperties;
 }
 
-const FeatureCard = ({ icon: Icon, title, description, className }: FeatureCardProps) => {
+const FeatureCard = ({ icon: Icon, title, description, className, style }: FeatureCardProps) => {
   return (
     <div
       className={cn(
@@ -17,6 +18,7 @@ const FeatureCard = ({ icon: Icon, title, description, className }: FeatureCardP
         "animate-fade-in",
         className
       )}
+      style={style}
     >
       <Icon className="w-10 h-10 text-primary mb-4" />
       <h3 className="text-xl font-semibold mb-2 text-white">{title}</h3>
