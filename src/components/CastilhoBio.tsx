@@ -11,19 +11,23 @@ const CastilhoBio = () => {
             </h2>
             <div className="space-y-6 text-lg text-gray-300">
               <p className="glass p-4 rounded-lg">
-                Com mais de uma década de experiência em tecnologia e inovação, 
-                Castilho é um especialista reconhecido em Inteligência Artificial 
-                e automação de processos.
+                Com formação em Análise e Desenvolvimento de Sistemas, iniciei sua carreria no marketing.
+                Porém me encontrei na análise de Dados, onde conseguiu seu primeiro emprego na área.
+                Até conseguir um emprego como Analista de Inteligência de Mercado, onde aprendi e aprimorei
+                meus conhecimentos sobre Business e Dados.
               </p>
               <p className="glass p-4 rounded-lg">
-                Fundador de múltiplas startups de sucesso e mentor de dezenas 
-                de profissionais que hoje lideram projetos de IA em grandes 
-                empresas, ele traz uma abordagem única que combina conhecimento 
-                técnico profundo com visão estratégica de negócios.
+                Logo me encontrei num plato, queria ganhar mais e trabalhar menos.
+                Tentei de tudo, literalmente!
+                Abri loja de produtos naturais, lavei carros, fiz dropshipping, afiliado
+                E nada funcionou...
               </p>
               <p className="glass p-4 rounded-lg">
-                Sua missão é democratizar o conhecimento em IA e ajudar 
-                profissionais a se destacarem neste mercado em explosão.
+                Até que encontrei a inteligência Artificial, que tem uma curva de aprendizado muito rápida.
+                Logo iniciei a montar agentes IA e automações.
+                Fechei meus primeiros contratos.
+                Hoje só fecho os contratos que EU QUERO!
+                E ensino diversas pessoas a transformarem sua vida em pouquissímo tempo com IA.
               </p>
             </div>
             <div className="flex gap-4 mt-8">
