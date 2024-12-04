@@ -2,6 +2,7 @@ import { Bot, Brain, Code, Users, TrendingUp, Globe, Cpu, LineChart } from "luci
 import HeroSection from "@/components/HeroSection";
 import FeatureCard from "@/components/FeatureCard";
 import PricingCard from "@/components/PricingCard";
+import CastilhoBio from "@/components/CastilhoBio";
 
 const Index = () => {
   const features = [
@@ -180,7 +181,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* New AI Growth Section */}
+      {/* AI Growth Section */}
       <section className="py-20 px-4 bg-gradient-to-b from-dark to-dark-lighter">
         <div className="container mx-auto">
           <div className="text-center mb-16">
@@ -219,6 +220,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Bio Section */}
+      <CastilhoBio />
     </div>
   );
 };
