@@ -145,8 +145,6 @@ const Index = () => {
         </div>
       </section>
 
-      <WhatYouWillLearn />
-
       {/* Pricing Section */}
       <section className="py-20 px-4 bg-dark-lighter">
         <div className="container mx-auto">
@@ -227,6 +225,9 @@ const Index = () => {
 
       {/* Bio Section */}
       <CastilhoBio />
+
+      {/* What You Will Learn Section - Now at the end */}
+      <WhatYouWillLearn />
 
       {/* Final CTA Section */}
       <FinalCTA />
