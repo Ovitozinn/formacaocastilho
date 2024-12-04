@@ -1,6 +1,6 @@
 import React from 'react';
 import CTAButton from './CTAButton';
-import { ArrowRight, CheckCircle2, Clock, Fire } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Clock, Flame } from 'lucide-react';
 
 const FinalCTA = () => {
   return (
@@ -13,7 +13,7 @@ const FinalCTA = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Urgency Badge */}
           <div className="inline-flex items-center gap-2 bg-red-500/20 text-red-400 px-4 py-2 rounded-full mb-8 animate-pulse">
-            <Fire className="w-5 h-5" />
+            <Flame className="w-5 h-5" />
             <span className="font-semibold">Oferta por tempo limitado!</span>
             <Clock className="w-5 h-5" />
           </div>
