@@ -30,46 +30,46 @@ const Index = () => {
   const individualCourses = [
     {
       title: "Desenvolvedor n8n",
-      price: "197",
-      originalPrice: "397",
+      price: "397",
       features: [
         "Automação de processos",
         "Integração de sistemas",
         "Workflows avançados",
-        "Projetos práticos"
+        "Projetos práticos",
+        "Certificado de conclusão"
       ]
     },
     {
       title: "Engenharia de Prompt",
-      price: "97",
-      originalPrice: "197",
+      price: "197",
       features: [
         "Técnicas avançadas de prompt",
         "Otimização de resultados",
         "Cases práticos",
-        "Frameworks de prompt"
+        "Frameworks de prompt",
+        "Certificado de conclusão"
       ]
     },
     {
       title: "Prospecção e Fechamento",
-      price: "47",
-      originalPrice: "97",
+      price: "97",
       features: [
         "Estratégias de vendas",
         "Negociação efetiva",
         "Scripts prontos",
-        "Templates de propostas"
+        "Templates de propostas",
+        "Certificado de conclusão"
       ]
     },
     {
       title: "Formação Agentes IA",
-      price: "497",
-      originalPrice: "897",
+      price: "897",
       features: [
         "Criação de agentes autônomos",
         "Integração com APIs",
         "Automação avançada",
-        "Projetos completos"
+        "Projetos completos",
+        "Certificado de conclusão"
       ]
     }
   ];
@@ -82,10 +82,18 @@ const Index = () => {
       "Acesso a TODOS os cursos acima",
       "Mentoria em grupo semanal",
       "Certificados individuais",
-      "Bônus exclusivos de lançamento"
+      "Bônus exclusivos de lançamento",
+      "Acesso vitalício ao conteúdo",
+      "Atualizações gratuitas"
     ],
     isPopular: true,
-    description: "🔥 OFERTA ESPECIAL DE LANÇAMENTO 2024 🔥\nAproveite! Preço aumentará em breve!"
+    description: `🔥 OFERTA ESPECIAL DE LANÇAMENTO 2024 🔥
+
+A Inteligência Artificial está revolucionando o mercado!
+Não fique para trás enquanto outros profissionais dominam essa tecnologia.
+
+⚠️ ATENÇÃO: Preço aumentará para R$997 em breve!
+Garanta agora sua vaga com mais de 80% de desconto!`
   };
 
   return (
@@ -139,10 +147,10 @@ const Index = () => {
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold text-primary mb-2">
-                🚀 Oferta Especial de Lançamento 🚀
+                🚀 Oferta Imperdível - Tempo Limitado 🚀
               </h3>
               <p className="text-gray-300">
-                Em comemoração ao lançamento da plataforma, estamos oferecendo um desconto especial para as primeiras turmas de 2024!
+                A revolução da IA está acontecendo agora. Não perca a oportunidade de se tornar um especialista em Inteligência Artificial com o melhor preço já oferecido!
               </p>
             </div>
             <PricingCard
