@@ -29,25 +29,57 @@ const Index = () => {
 
   const pricingPlans = [
     {
-      title: "Curso Completo",
-      price: "199",
+      title: "Desenvolvedor n8n",
+      price: "397",
       features: [
-        "Acesso vitalício ao conteúdo",
-        "Certificado de conclusão",
-        "Suporte da comunidade",
+        "Automação de processos",
+        "Integração de sistemas",
+        "Workflows avançados",
         "Projetos práticos"
       ]
     },
     {
-      title: "Pacote Premium",
-      price: "299",
+      title: "Engenharia de Prompt",
+      price: "197",
       features: [
-        "Tudo do Curso Completo",
-        "Mentoria personalizada",
-        "Acesso a workshops exclusivos",
-        "Networking premium"
+        "Técnicas avançadas de prompt",
+        "Otimização de resultados",
+        "Cases práticos",
+        "Frameworks de prompt"
+      ]
+    },
+    {
+      title: "Prospecção e Fechamento",
+      price: "97",
+      features: [
+        "Estratégias de vendas",
+        "Negociação efetiva",
+        "Scripts prontos",
+        "Templates de propostas"
+      ]
+    },
+    {
+      title: "Formação Agentes IA",
+      price: "897",
+      features: [
+        "Criação de agentes autônomos",
+        "Integração com APIs",
+        "Automação avançada",
+        "Projetos completos"
+      ]
+    },
+    {
+      title: "Curso Completo",
+      price: "199",
+      originalPrice: "997",
+      features: [
+        "Acesso a todos os cursos",
+        "Mentoria em grupo",
+        "Certificados individuais",
+        "Bônus exclusivos"
       ],
-      isPopular: true
+      isPopular: true,
+      description: "Em desenvolvimento - Aproveite o desconto especial!"
     }
   ];
 
@@ -88,7 +120,7 @@ const Index = () => {
             Escolha o plano ideal para sua jornada de aprendizado
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 max-w-7xl mx-auto">
             {pricingPlans.map((plan, index) => (
               <PricingCard
                 key={index}
