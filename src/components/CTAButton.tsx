@@ -14,7 +14,7 @@ const CTAButton = ({
   return (
     <button
       className={cn(
-        "px-6 py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105",
+        "px-4 md:px-6 py-2 md:py-3 text-sm md:text-base rounded-lg font-medium transition-all duration-300 transform hover:scale-105",
         variant === "primary" 
           ? "bg-primary text-white hover:bg-primary-hover shadow-lg hover:shadow-xl" 
           : "bg-white/10 text-white backdrop-blur-sm hover:bg-white/20",
