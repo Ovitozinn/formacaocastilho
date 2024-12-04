@@ -3,6 +3,10 @@ import CTAButton from './CTAButton';
 import { ArrowRight, CheckCircle2, Clock, Flame } from 'lucide-react';
 
 const FinalCTA = () => {
+  const handleClick = () => {
+    window.open("https://pay.kirvano.com/186d210d-4150-4fb3-9643-fc870759dda3", "_blank");
+  };
+
   return (
     <section className="py-24 relative overflow-hidden">
       {/* Background with gradient and overlay */}
@@ -64,7 +68,7 @@ const FinalCTA = () => {
           <div className="flex flex-col items-center gap-6">
             <CTAButton 
               className="text-lg px-8 py-4 animate-bounce"
-              onClick={() => window.location.href = "https://pay.kirvano.com/186d210d-4150-4fb3-9643-fc870759dda3"}
+              onClick={handleClick}
             >
               Garantir Minha Vaga Agora
               <ArrowRight className="w-5 h-5" />
