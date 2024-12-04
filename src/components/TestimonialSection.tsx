@@ -10,7 +10,7 @@ const TestimonialSection = () => {
         <div className="flex flex-col md:flex-row gap-8 items-center justify-center">
           <div className="w-full md:w-1/3">
             <img
-              src="/lovable-uploads/8a778894-0186-48e6-a6d7-f78f25b74216.png"
+              src="/lovable-uploads/88f315b6-d4c7-4e0e-89c4-bb56d5505236.png"
               alt="WhatsApp Feedback"
               className="rounded-lg shadow-lg w-full max-w-[300px] mx-auto"
             />
