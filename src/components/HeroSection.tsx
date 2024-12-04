@@ -2,6 +2,11 @@ import { Bot, Brain, Rocket } from "lucide-react";
 import CTAButton from "./CTAButton";
 
 const HeroSection = () => {
+  const scrollToOffer = () => {
+    const offerSection = document.querySelector('#final-offer');
+    offerSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-dark-lighter to-dark" />
@@ -24,9 +29,8 @@ const HeroSection = () => {
           Aprenda a criar soluções inovadoras com IA e automação.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
-          <CTAButton>Começar agora</CTAButton>
-          <CTAButton variant="secondary">Ver grade curricular</CTAButton>
+        <div className="flex justify-center animate-fade-in">
+          <CTAButton onClick={scrollToOffer}>Começar agora</CTAButton>
         </div>
       </div>
     </div>
