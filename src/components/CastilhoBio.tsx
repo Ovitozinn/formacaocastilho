@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Instagram, Linkedin, Youtube } from "lucide-react";
 
 const CastilhoBio = () => {
   return (
@@ -28,7 +28,7 @@ const CastilhoBio = () => {
             </div>
             <div className="flex gap-4 mt-8">
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/notifications/?filter=all" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-3 glass rounded-full hover:scale-110 transition-transform"
@@ -36,20 +36,20 @@ const CastilhoBio = () => {
                 <Linkedin className="w-6 h-6 text-primary" />
               </a>
               <a 
-                href="https://twitter.com" 
+                href="https://www.instagram.com/castilho.ia" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-3 glass rounded-full hover:scale-110 transition-transform"
               >
-                <Twitter className="w-6 h-6 text-primary" />
+                <Instagram className="w-6 h-6 text-primary" />
               </a>
               <a 
-                href="https://github.com" 
+                href="https://www.youtube.com/@gruposenaai" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-3 glass rounded-full hover:scale-110 transition-transform"
               >
-                <Github className="w-6 h-6 text-primary" />
+                <Youtube className="w-6 h-6 text-primary" />
               </a>
             </div>
           </div>
