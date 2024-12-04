@@ -24,8 +24,8 @@ const TestimonialSection = () => {
               resultados extraordinários são possíveis.
             </p>
             <div className="space-y-2 text-gray-300">
-              <p>✅ Primeiro contrato: R$ 3.500,00</p>
-              <p>✅ Segundo contrato: R$ 4.200,00</p>
+              <p>✅ Primeiro contrato: R$ 3.000,00</p>
+              <p>✅ Segundo contrato: R$ 1.800,00</p>
               <p className="text-primary font-semibold mt-4">
                 Total: R$ 7.700,00 em menos de 20 dias!
               </p>
