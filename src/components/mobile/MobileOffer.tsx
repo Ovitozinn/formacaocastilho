@@ -21,7 +21,7 @@ const MobileOffer = () => {
             "Atualizações gratuitas"
           ]}
           isPopular={true}
-          description="🔥 OFERTA ESPECIAL DE LANÇAMENTO 2024 🔥\n\nGaranta agora sua vaga com mais de 80% de desconto!"
+          description="OFERTA ESPECIAL DE LANÇAMENTO 2024 • Garanta agora sua vaga com mais de 80% de desconto!"
           className="max-w-sm mx-auto"
         />
       </div>

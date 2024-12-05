@@ -55,7 +55,7 @@ const PricingCard = ({
           )}
         </div>
         {description && (
-          <p className="text-sm text-primary mt-2 whitespace-pre-line">{description}</p>
+          <p className="text-sm text-primary mt-2">{description}</p>
         )}
       </div>
       <ul className="space-y-3 mb-6">

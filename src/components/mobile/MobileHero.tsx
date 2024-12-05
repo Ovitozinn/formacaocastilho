@@ -8,7 +8,7 @@ const MobileHero = () => {
   };
 
   return (
-    <div className="relative min-h-[60vh] flex items-center justify-center overflow-hidden md:hidden">
+    <div className="relative min-h-[50vh] flex items-center justify-center overflow-hidden md:hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-dark-lighter to-dark" />
       
       <div className="relative z-10 container mx-auto px-3 text-center">

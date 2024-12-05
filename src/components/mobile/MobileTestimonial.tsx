@@ -1,6 +1,6 @@
 const MobileTestimonial = () => {
   return (
-    <section className="py-6 px-3 bg-dark md:hidden">
+    <section className="py-4 px-3 bg-dark md:hidden">
       <div className="container mx-auto">
         <h2 className="text-lg font-bold mb-3 text-center gradient-text">
           Resultados Reais
