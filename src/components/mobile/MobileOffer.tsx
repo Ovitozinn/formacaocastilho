@@ -2,9 +2,9 @@ import PricingCard from "../PricingCard";
 
 const MobileOffer = () => {
   return (
-    <section id="offer-section" className="py-12 px-4 bg-dark-lighter md:hidden">
+    <section id="offer-section" className="py-8 px-4 bg-dark-lighter md:hidden">
       <div className="container mx-auto">
-        <h2 className="text-2xl font-bold text-center mb-6 gradient-text">
+        <h2 className="text-xl sm:text-2xl font-bold text-center mb-6 gradient-text">
           Oferta Especial
         </h2>
         
@@ -22,6 +22,7 @@ const MobileOffer = () => {
           ]}
           isPopular={true}
           description="🔥 OFERTA ESPECIAL DE LANÇAMENTO 2024 🔥\n\nGaranta agora sua vaga com mais de 80% de desconto!"
+          className="max-w-sm mx-auto"
         />
       </div>
     </section>

@@ -2,11 +2,11 @@ const MobileTestimonial = () => {
   return (
     <section className="py-8 px-4 bg-dark md:hidden">
       <div className="container mx-auto">
-        <h2 className="text-2xl font-bold mb-6 text-center gradient-text">
+        <h2 className="text-xl sm:text-2xl font-bold mb-4 text-center gradient-text">
           Resultados Reais
         </h2>
-        <div className="glass p-4 rounded-lg">
-          <div className="space-y-2 text-gray-300">
+        <div className="glass p-4 rounded-lg max-w-sm mx-auto">
+          <div className="space-y-2 text-sm sm:text-base text-gray-300">
             <p className="font-semibold text-primary mb-2">
               Em menos de 20 dias:
             </p>
