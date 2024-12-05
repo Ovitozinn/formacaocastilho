@@ -60,10 +60,7 @@ const CastilhoBio = () => {
           
           <div className="order-1 lg:order-2">
             <div className="relative group">
-              {/* Glow effect */}
               <div className="absolute -inset-1 bg-gradient-to-r from-primary to-primary-hover opacity-75 blur-2xl group-hover:opacity-100 transition-opacity duration-500"></div>
-              
-              {/* Main image container */}
               <div className="relative">
                 <div className="aspect-[3/4] overflow-hidden rounded-2xl">
                   <img 
@@ -72,8 +69,6 @@ const CastilhoBio = () => {
                     className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                
-                {/* Overlay effect */}
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-dark/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
             </div>
