@@ -2,9 +2,9 @@ import PricingCard from "../PricingCard";
 
 const MobileOffer = () => {
   return (
-    <section id="offer-section" className="py-8 px-4 bg-dark-lighter md:hidden">
+    <section id="offer-section" className="py-6 px-3 bg-dark-lighter md:hidden">
       <div className="container mx-auto">
-        <h2 className="text-xl sm:text-2xl font-bold text-center mb-6 gradient-text">
+        <h2 className="text-xl font-bold text-center mb-4 gradient-text">
           Oferta Especial
         </h2>
         
