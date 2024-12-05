@@ -3,7 +3,7 @@ import CTAButton from "./CTAButton";
 
 const HeroSection = () => {
   const scrollToOffer = () => {
-    const offerSection = document.querySelector('#final-offer');
+    const offerSection = document.querySelector('#offer-section');
     offerSection?.scrollIntoView({ behavior: 'smooth' });
   };
 
