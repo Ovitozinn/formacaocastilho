@@ -64,22 +64,24 @@ const WhatYouWillLearn = () => {
         </div>
 
         <div className="max-w-3xl mx-auto">
-          <div className="p-8 md:p-12 rounded-2xl bg-white/[0.02] border border-white/[0.05] animate-scale-in">
-            <p className="text-2xl md:text-3xl font-bold text-white/90 mb-4 tracking-tight">
+          <div className="p-8 md:p-12 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/20 shadow-[0_0_50px_rgba(155,135,245,0.1)] animate-scale-in backdrop-blur-sm">
+            <p className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight text-center">
               Comece sua jornada agora
             </p>
-            <p className="text-lg text-gray-400 mb-8">
+            <p className="text-lg text-gray-300 mb-8 text-center">
               Entre para nossa comunidade e tenha acesso ao conhecimento necessário para se destacar 
               no mercado de IA. Não perca mais tempo - cada dia é uma oportunidade.
             </p>
-            <a
-              href="https://pay.kirvano.com/186d210d-4150-4fb3-9643-fc870759dda3"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center w-full md:w-auto bg-primary hover:bg-primary-hover text-white font-medium px-8 py-4 rounded-xl transition-all duration-300 hover:scale-[1.02]"
-            >
-              Começar Agora
-            </a>
+            <div className="flex justify-center">
+              <a
+                href="https://pay.kirvano.com/186d210d-4150-4fb3-9643-fc870759dda3"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center bg-primary hover:bg-primary-hover text-white font-medium px-8 py-4 rounded-xl transition-all duration-300 hover:scale-[1.02] shadow-lg hover:shadow-primary/25"
+              >
+                Começar Agora
+              </a>
+            </div>
           </div>
         </div>
       </div>
